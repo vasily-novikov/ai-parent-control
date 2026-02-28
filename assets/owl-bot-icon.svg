@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Friendly Owl Bot Icon</title>
+  <desc id="desc">A friendly cartoon owl with round glasses on a warm circular background.</desc>
+
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#FFE9BC" />
+      <stop offset="65%" stop-color="#F7C676" />
+      <stop offset="100%" stop-color="#E8A14D" />
+    </radialGradient>
+
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B67B42" />
+      <stop offset="100%" stop-color="#8A562A" />
+    </linearGradient>
+
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C88D50" />
+      <stop offset="100%" stop-color="#9A6232" />
+    </linearGradient>
+
+    <linearGradient id="bellyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7D9A6" />
+      <stop offset="100%" stop-color="#EFC790" />
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#6B3F1F" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <circle cx="512" cy="512" r="500" fill="url(#bgGrad)" />
+
+  <g filter="url(#softShadow)">
+    <ellipse cx="512" cy="600" rx="260" ry="300" fill="url(#bodyGrad)" />
+    <circle cx="512" cy="375" r="215" fill="url(#headGrad)" />
+
+    <path d="M370 220 L320 120 L440 200 Z" fill="#9A6232" />
+    <path d="M654 220 L704 120 L584 200 Z" fill="#9A6232" />
+
+    <ellipse cx="372" cy="620" rx="84" ry="160" fill="#9C6332" />
+    <ellipse cx="652" cy="620" rx="84" ry="160" fill="#9C6332" />
+
+    <ellipse cx="512" cy="650" rx="170" ry="190" fill="url(#bellyGrad)" />
+    <ellipse cx="512" cy="700" rx="95" ry="115" fill="#F3D19D" />
+
+    <circle cx="432" cy="385" r="82" fill="#FDF5E8" />
+    <circle cx="592" cy="385" r="82" fill="#FDF5E8" />
+    <circle cx="432" cy="395" r="32" fill="#2C1E14" />
+    <circle cx="592" cy="395" r="32" fill="#2C1E14" />
+    <circle cx="442" cy="386" r="10" fill="#FFFFFF" />
+    <circle cx="602" cy="386" r="10" fill="#FFFFFF" />
+
+    <circle cx="432" cy="385" r="90" fill="none" stroke="#2A2A2A" stroke-width="14" />
+    <circle cx="592" cy="385" r="90" fill="none" stroke="#2A2A2A" stroke-width="14" />
+    <rect x="490" y="372" width="44" height="18" rx="9" fill="#2A2A2A" />
+
+    <path d="M350 320 Q430 280 500 325" fill="none" stroke="#7C4A24" stroke-width="14" stroke-linecap="round" />
+    <path d="M524 325 Q594 280 674 320" fill="none" stroke="#7C4A24" stroke-width="14" stroke-linecap="round" />
+
+    <path d="M512 430 L552 490 L472 490 Z" fill="#F4A53A" />
+
+    <circle cx="374" cy="455" r="18" fill="#D7835B" opacity="0.45" />
+    <circle cx="650" cy="455" r="18" fill="#D7835B" opacity="0.45" />
+
+    <path d="M482 920 Q512 900 542 920" fill="none" stroke="#6A3D1D" stroke-width="12" stroke-linecap="round" />
+    <path d="M435 892 Q460 875 485 892" fill="none" stroke="#6A3D1D" stroke-width="12" stroke-linecap="round" />
+    <path d="M539 892 Q564 875 589 892" fill="none" stroke="#6A3D1D" stroke-width="12" stroke-linecap="round" />
+  </g>
+</svg>
