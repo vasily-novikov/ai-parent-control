@@ -1,0 +1,70 @@
+{
+"content": {
+"subject_guess": "Biologie",
+"topic_guess": "Ökosystem, Biotop und Biozönose",
+"summary": "Die Notizen behandeln das Thema Ökosystem. Es wird erklärt, dass ein Ökosystem aus Biotop (unbelebte Umwelt) und Biozönose (alle Lebewesen) besteht. Außerdem wird die Nahrungskette beschrieben sowie biotische und abiotische Faktoren. Auch Beziehungen zwischen Lebewesen wie Symbiose und Parasitismus werden genannt.",
+"key_points": [
+"Ein Ökosystem besteht aus Biotop (alles Nicht-Lebendige wie See, Wind) und Biozönose (alles Lebendige im Ökosystem).",
+"Nahrungskette: Produzenten betreiben Fotosynthese, werden von Konsumenten gefressen, am Ende zersetzen Destruenten die Reste.",
+"Biotische Faktoren = alle Lebewesen, abiotische Faktoren = z.B. Wind, Wasser.",
+"Symbiose = Win-Win-Situation, Parasitismus = einseitiger Vorteil."
+],
+"detected_homework_or_tasks": [],
+"ocr_text_excerpt": "Concept-Map "Ökosystem"; Nahrungskette; Produzenten betreiben Fotosynthese; Destruenten fressen eine Leiche; Biotop; Biozönose; biotische und abiotische Faktoren; Symbiose; Parasitismus"
+},
+"neatness": {
+"percent": 83,
+"what_is_good": [
+"Die Schrift ist überwiegend gut lesbar und klar erkennbar.",
+"Die Concept-Map ist farblich strukturiert (z.B. verschiedene Farben für Bereiche).",
+"Kaum Durchstreichungen oder Verschmutzungen sichtbar.",
+"Überschriften und Kästen helfen bei der Orientierung."
+],
+"areas_of_improvement": [
+"Einige Wörter sind sehr klein oder etwas blass geschrieben.",
+"Die Pfeile und Verbindungen könnten noch gerader und gleichmäßiger gezeichnet sein.",
+"Mehr Abstand zwischen einzelnen Bereichen würde die Übersicht noch verbessern."
+],
+"subscores": {
+"legibility_clarity": 30,
+"visual_structure": 22,
+"cleanliness": 18,
+"consistency": 13
+}
+},
+"formal_compliance_berlin_gymnasium": {
+"percent": 71,
+"what_is_good": [
+"Ein Datum ist oben rechts eingetragen (20.2.26).",
+"Das Thema "Ökosystem" ist klar als Überschrift erkennbar.",
+"Wichtige Fachbegriffe wie Produzenten, Konsumenten, Destruenten, biotische und abiotische Faktoren sind enthalten.",
+"Die Inhalte sind logisch in einer Concept-Map angeordnet."
+],
+"areas_of_improvement": [
+"Das Fach (Biologie) ist nicht ausdrücklich angegeben.",
+"Ein klarer Tafelanschrieb oder eine strukturierte Gliederung (z.B. mit Nummerierung) fehlt.",
+"Keine klar markierten Hausaufgaben oder Merksätze erkennbar.",
+"Einige Definitionen könnten genauer formuliert sein (z.B. kurze vollständige Erklärung in ganzen Sätzen)."
+],
+"subscores": {
+"date_present": 10,
+"subject_topic_present": 14,
+"key_concepts_captured": 17,
+"logical_structure": 11,
+"lesson_completeness": 11,
+"german_terminology_quality": 8,
+"homework_marked": 0
+},
+"assumptions": [
+"Es werden allgemeine Erwartungen an Heftführung im Berliner Gymnasium zugrunde gelegt, da keine schulspezifischen Vorgaben sichtbar sind."
+]
+},
+"confidence": {
+"ocr_confidence_percent": 88,
+"assessment_confidence_percent": 84,
+"image_quality_issues": [
+"Einige Wörter sind klein und leicht verschwommen.",
+"Leichte Schattenbildung am Rand des Blattes."
+]
+}
+}

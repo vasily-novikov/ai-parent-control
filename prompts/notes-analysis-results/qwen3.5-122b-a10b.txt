@@ -1,0 +1,108 @@
+The user is asking me to analyze a photo of class notes from a 7th grade student at Herder Gymnasium in Berlin Westend. They want me to return only JSON output with specific fields.
+
+Looking at the provided text, it appears to be OCR text from a photo of notes about "Ökosystem" (Ecosystem) - this is likely Biology/Science content.
+
+Let me analyze the notes:
+
+The content is about ecosystems, food chains, biotic/abiotic factors
+There are some unclear parts and possible errors (e.g., "Störheter" should probably be "Störung" or something else, "Natrium- und -Vortrierung" doesn't make sense - could be "Nahrungskette" related, "Win-Win situation" is written in English)
+Date format is 20.2.26 (which would be February 20, 2026 - seems like a future date, possibly a typo for 2024 or 2025)
+The notes have some structure with headings but also some confusion
+I need to create JSON output that:
+
+Is valid JSON
+Has all required fields
+Uses German language
+Follows the scoring rubric
+Calculates percentages correctly based on the subscores
+Let me calculate the scores:
+
+Neatness:
+
+Legibility/clarity: The handwriting appears somewhat messy with unclear terms - let's say 55%
+Visual structure: Has some headings and bullet points but inconsistent - 50%
+Cleanliness: Some cross-outs and unclear parts - 60%
+Consistency: Mixed style, some English terms mixed in - 50%
+Weighted: (55×0.35) + (50×0.25) + (60×0.20) + (50×0.20) = 19.25 + 12.5 + 12 + 10 = 53.75 ≈ 54%
+
+For formal compliance in the Berlin Gymnasium context, I need to evaluate against the specific criteria. The date is present but uses an unusual format (20.2.26), the subject and topic are clearly marked with "Ökosystem", and key concepts like producers and consumers are captured. The logical structure has some organization with sections but lacks clear hierarchy. Lesson completeness shows partial coverage of examples and tasks. German terminology is mixed with English terms like "Win-Win situation". Homework isn't clearly marked.
+
+Weighted calculation: (10×0.10) + (20×0.20) + (20×0.20) + (15×0.15) + (15×0.15) + (10×0.10) + (10×0.10) = 1 + 4 + 4 + 2.25 + 2.25 + 1 + 1 = 15.5 out of 20 possible points = 77.5%
+
+I need to verify my scoring methodology. For neatness, the weighted formula is (legibility_clarity × 0.35) + (visual_structure × 0.25) + (cleanliness × 0.20) + (consistency × 0.20). For formal compliance, it's (date_present × 0.10) + (subject_topic_present × 0.20) + (key_concepts_captured × 0.20) + (logical_structure × 0.15) + (lesson_completeness × 0.15) + (german_terminology_quality × 0.10) + (homework_marked × 0.10).
+
+I'll set neatness.subscores to legibility_clarity: 55, visual_structure: 50, cleanliness: 60, consistency: 50, which gives 53.75 → 54%. For formal_compliance, I'm assigning date_present: 50 (date exists but format is unclear), subject_topic_present: 80 (clearly marked), key_concepts_captured: 60 (some concepts present but with errors), logical_structure: 50 (basic organization exists), lesson_completeness: 40 (incomplete examples), german_terminology_quality: 50 (mixed language use), homework_marked: 0 (not visible). This calculates to 5 + 16 + 12 + 7.5 + 6 + 5 + 0 = 51.5 → 52%.
+
+I need to ensure the JSON is properly formatted with all required fields and valid syntax.
+
+Collapse reasoning
+
+{
+  "content": {
+    "subject_guess": "Biologie",
+    "topic_guess": "Ökosystem und Nahrungskette",
+    "summary": "Die Notizen behandeln grundlegende Konzepte des Ökosystems, einschließlich der Rollen von Produzenten, Konsumenten und Destruenten sowie der Unterscheidung zwischen biotischen und abiotischen Faktoren. Es gibt einige Unklarheiten bei der Terminologie, die auf Verständnisschwierigkeiten hindeuten könnten.",
+    "key_points": [
+      "Fotosynthese durch Produzenten (Sonne, CO₂, H₂O)",
+      "Nahrungskette: Produzenten → Konsumenten → Destruenten",
+      "Biozönose = alle Lebewesen im Ökosystem",
+      "Biotische und abiotische Faktoren",
+      "Parasitismus als ökologische Beziehung"
+    ],
+    "detected_homework_or_tasks": [],
+    "ocr_text_excerpt": "Concept - Map \"Ökosystem\" 20.2.26 Sonne CO₂ + H₂O Nahrungshalter: Produzenten betreiben Fotosynthese Werden von Konsumenten gefressen Ökosystem Destruenten fressen seine Leiche Biozönose Alles Lebendige im Ökosystem Biotische Faktoren Parasitismus"
+  },
+  "neatness": {
+    "percent": 54,
+    "what_is_good": [
+      "Hauptüberschrift 'Ökosystem' ist klar erkennbar",
+      "Einige Abschnitte sind mit Leerzeilen getrennt"
+    ],
+    "areas_of_improvement": [
+      "Einige Begriffe sind unleserlich oder falsch geschrieben (z.B. 'Störheter', 'Natrium- und -Vortrierung')",
+      "Mischung aus Deutsch und Englisch ('Win-Win situation')",
+      "Weniger Durchstreichungen und bessere Lesbarkeit"
+    ],
+    "subscores": {
+      "legibility_clarity": 55,
+      "visual_structure": 50,
+      "cleanliness": 60,
+      "consistency": 50
+    }
+  },
+  "formal_compliance_berlin_gymnasium": {
+    "percent": 52,
+    "what_is_good": [
+      "Datum vorhanden (20.2.26)",
+      "Fach und Thema sind deutlich gekennzeichnet",
+      "Wichtige Konzepte wie Produzenten/Konsumenten/Destruenten notiert"
+    ],
+    "areas_of_improvement": [
+      "Fachbegriffe sollten korrekt und vollständig notiert werden",
+      "Keine Hausaufgaben oder nächste Schritte erkennbar",
+      "Struktur könnte klarer mit Nummerierung oder Aufzählungszeichen sein"
+    ],
+    "subscores": {
+      "date_present": 50,
+      "subject_topic_present": 80,
+      "key_concepts_captured": 60,
+      "logical_structure": 50,
+      "lesson_completeness": 40,
+      "german_terminology_quality": 50,
+      "homework_marked": 0
+    },
+    "assumptions": [
+      "Bewertung basiert auf allgemeinen Berlin Gymnasium Konventionen, da spezifische Schulregeln nicht sichtbar sind",
+      "Annahme: Biologie-Unterricht für Klasse 7"
+    ]
+  },
+  "confidence": {
+    "ocr_confidence_percent": 65,
+    "assessment_confidence_percent": 70,
+    "image_quality_issues": [
+      "Einige Wörter sind unklar oder falsch erkannt",
+      "Mögliche handschriftliche Unleserlichkeiten",
+      "Fotosynthese-Zeichen (⚫) nicht eindeutig interpretierbar"
+    ]
+  }
+}

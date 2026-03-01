@@ -1,0 +1,93 @@
+One important detail: The date "20.2.26" - in Germany usually written as 20.02.2026 or 20.2.2026. "26" could mean 2026. This is acceptable.
+
+Subject guess: "Biologie"
+Topic guess: "Ökosysteme und ökologische Beziehungen"
+
+Key points should include the main concepts detected.
+
+Detected homework: None (leer oder nicht erkannt)
+
+OCR excerpt: The provided text.
+
+I need to make sure the tone is supportive and appropriate for a 13-year-old in Berlin.
+
+Final JSON assembly.
+
+Collapse reasoning
+
+{
+  "content": {
+    "subject_guess": "Biologie",
+    "topic_guess": "Ökosysteme, Nahrungsbeziehungen und ökologische Wechselwirkungen",
+    "summary": "Die Notizen zeigen eine Concept-Map zum Thema Ökosystem. Sie erfasst zentrale Elemente wie Produzenten (Fotosynthese), Konsumenten und Destruenten. Außerdem werden die Begriffe Biozönose, biotische und abiotische Faktoren sowie die Unterschiede zwischen Parasitismus und Symbiose behandelt.",
+    "key_points": [
+      "Produzenten betreiben Fotosynthese mit CO₂ und H₂O (Energiequelle: Sonne)",
+      "Nahrungsbeziehungen: Produzenten → Konsumenten (verschiedene Ordnungen) → Destruenten",
+      "Biozönose = alle lebenden Organismen im Ökosystem",
+      "Unterscheidung zwischen biotischen und abiotischen Faktoren (z.B. Wind, Wasser)",
+      "Gegensatz Parasitismus (einseitiger Nutzen) und Symbiose (Win-Win)"
+    ],
+    "detected_homework_or_tasks": [],
+    "ocr_text_excerpt": "Concept - Map \"Ökosystem\" 20.2.26 Sonne CO₂ + H₂O Nahrungshalter: Produzenten betreiben Fotosynthese... Biozönose Alles Lebedige im Ökosystem... Symbiose Win-Win situation für beide"
+  },
+  "neatness": {
+    "percent": 72,
+    "what_is_good": [
+      "Die Concept-Map-Struktur hilft, Zusammenhänge visuell zu ordnen und ist ein guter Lernansatz",
+      "Das Datum ist klar und vollständig angegeben",
+      "Die Handschrift ist im Allgemeinen lesbar und nicht unübersichtlich verschmiert",
+      "Es gibt sichtbare Absätze und eine gewisse Hierarchie in der Anordnung"
+    ],
+    "areas_of_improvement": [
+      "Achte auf gleichmäßige Zeilenabstände und Ränder, damit alles ordentlicher wirkt",
+      "Versuche, durchgehend auf einer gedachten Linie zu schreiben, damit die Zeilen nicht 'tanzen'",
+      "Korrigierte oder unleserliche Wörter (wie 'Störheter') am besten sauber ausradieren und neu schreiben statt darüberzuschreiben",
+      "Nutze für Überschriften eine etwas größere oder fettere Schrift, damit sie besser hervorstechen"
+    ],
+    "subscores": {
+      "legibility_clarity": 75,
+      "visual_structure": 70,
+      "cleanliness": 75,
+      "consistency": 65
+    }
+  },
+  "formal_compliance_berlin_gymnasium": {
+    "percent": 58,
+    "what_is_good": [
+      "Das Datum ist im typischen deutschen Format (20.2.26) vermerkt",
+      "Das Hauptthema 'Ökosystem' ist als Titel klar erkennbar",
+      "Wichtige ökologische Fachbegriffe (Produzenten, Konsumenten, Biozönose, Symbiose) wurden erfasst",
+      "Der Unterschied zwischen biotischen und abiotischen Faktoren wurde thematisiert"
+    ],
+    "areas_of_improvement": [
+      "Bitte schreibe oben links immer das Fach (hier: 'Biologie') und die Klasse mit ins Heft",
+      "Überprüfe die Rechtschreibung: Es heißt 'Lebende' (nicht 'Lebedige') und 'Destruenten' (nicht 'Destruenter')",
+      "Der Begriff 'Nahrungshalter' ist unklar – meinst du 'Nahrungskette' oder 'Nahrungspyramide'?",
+      "Die Definition zu Parasitismus ist unvollständig ('gegenteil von...') und der Satz 'Entnimmt Vorteil von Wind' scheint ein Verhörer zu sein (meinst du 'Wirt'?) – bitte korrigiere oder kläre mit dem Lehrer/in",
+      "Falls es Hausaufgaben gab: Markiere diese mit einer eigenen Überschrift 'HA' oder 'Aufgaben'",
+      "Versuche, Definitionen vollständig auszuschreiben, damit sie später beim Lernen verständlich sind"
+    ],
+    "subscores": {
+      "date_present": 100,
+      "subject_topic_present": 60,
+      "key_concepts_captured": 70,
+      "logical_structure": 65,
+      "lesson_completeness": 50,
+      "german_terminology_quality": 45,
+      "homework_marked": 0
+    },
+    "assumptions": [
+      "Bewertung erfolgt nach allgemeinen Berliner Gymnasium-Standards, da keine spezifischen Hausformvorgaben sichtbar sind",
+      "Angenommen, dass 'Störheter' ein Schreibfehler oder Lesefehler für 'Organismus' oder 'Tier' ist – bitte Original prüfen",
+      "Keine Hausaufgaben im Bild sichtbar; falls vorhanden, wurde dieser Bereich nicht erfasst"
+    ]
+  },
+  "confidence": {
+    "ocr_confidence_percent": 90,
+    "assessment_confidence_percent": 75,
+    "image_quality_issues": [
+      "Es wurde kein Foto, sondern bereits extrahierter Text bereitgestellt – die Analyse der Handschrift und des Layouts beruht daher auf Textrepräsentation",
+      "Einzelne Wörter ('Störheter', 'Nahrungshalter') konnten nicht eindeutig dem Standardvokabular zugeordnet werden und sind möglicherweise Verhörer oder Fachbegriffs-Neuschöpfungen"
+    ]
+  }
+}
