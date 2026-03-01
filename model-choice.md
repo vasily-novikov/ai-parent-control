@@ -106,3 +106,53 @@ Per-function ranking now matches the split table exactly (DE is effectively tie 
   - https://huggingface.co/Qwen/Qwen3.5-27B
 - GLM overview:
   - https://docs.z.ai/guides/overview/overview
+
+## 8) Separate Function: Homework Photo Analysis
+Scope for this function only:
+- homework photo recognition
+- handwritten German text recognition
+- neatness/readability analysis
+
+Compared models for this function:
+- `qwen/qwen3.5-122b-a10b`
+- `openai/gpt-5-mini` (user label: chat-gpt-mini)
+- `minimax/minimax-m2.5`
+- `moonshotai/kimi-k2.5`
+
+### Capability + German support + pricing
+Pricing below is OpenRouter list pricing as of 2026-03-01 and can vary by provider route.
+
+| Model | Image input (required) | OCR / document signals | German support | Pricing (input/output per 1M) | Blended price (3:1) | Fit for homework photo analysis |
+| --- | --- | --- | --- | --- | ---: | --- |
+| `qwen/qwen3.5-122b-a10b` | Yes | OCRBench `92.1`, OmniDocBench1.5 `89.8`, CharXiv `77.2` | High: model card states support for `201 languages and dialects` (includes German by inference) | `$0.40 / $3.20` | `$1.10` | Strong |
+| `moonshotai/kimi-k2.5` | Yes | OCRBench `92.3`, OmniDocBench1.5 `88.8`, CharXiv `77.5` | Medium (inference): multimodal and strong benchmark profile, but no explicit German-language claim in model card | `$0.45 / $2.20` | `$0.89` | Strong |
+| `openai/gpt-5-mini` | Yes | OCR proxy from Qwen benchmark table vs GPT-5-mini: OCRBench `82.1`, OmniDocBench1.5 `77.0`, CharXiv `68.6` | Medium-High (inference): GPT-5 family ranks strongly on AA German leaderboard; mini-specific German score not separately published | `$0.25 / $2.00` | `$0.69` | Good fallback |
+| `minimax/minimax-m2.5` | No (text only) | N/A | Low/Unknown for this task: docs emphasize text generation and multilingual programming, not image OCR | `$0.295 / $1.20` | `$0.52` | Not suitable (fails image requirement) |
+
+### Function split ranking (this task only)
+- Homework photo recognition: `Kimi K2.5 ≈ Qwen3.5-122B-A10B > GPT-5 mini >>> MiniMax M2.5`
+- Handwritten German text recognition: `Qwen3.5-122B-A10B ≈ Kimi K2.5 > GPT-5 mini >>> MiniMax M2.5`
+- Neatness/readability analysis: `Qwen3.5-122B-A10B ≈ Kimi K2.5 ≈ GPT-5 mini` (rubric quality matters more than model gap), `MiniMax M2.5` not applicable
+
+### Decision for this separate function
+- Primary shortlist: `qwen/qwen3.5-122b-a10b`, `moonshotai/kimi-k2.5`
+- Cost-managed fallback: `openai/gpt-5-mini`
+- Exclude for this function: `minimax/minimax-m2.5` (no image input)
+
+## 9) Sources (Homework Photo Analysis)
+- OpenRouter model pages (pricing + model descriptions):
+  - https://openrouter.ai/qwen/qwen3.5-122b-a10b
+  - https://openrouter.ai/moonshotai/kimi-k2.5
+  - https://openrouter.ai/openai/gpt-5-mini
+  - https://openrouter.ai/minimax/minimax-m2.5
+- Qwen model card (multilingual + OCR/doc benchmarks):
+  - https://huggingface.co/Qwen/Qwen3.5-122B-A10B-FP8
+- Kimi K2.5 model card (multimodal + OCR/doc benchmarks):
+  - https://huggingface.co/moonshotai/Kimi-K2.5
+- OpenAI GPT-5 mini model doc (modalities):
+  - https://developers.openai.com/api/docs/models/gpt-5-mini
+- MiniMax docs (M2.5 under text generation):
+  - https://platform.minimax.io/docs/guides/text-generation
+  - https://platform.minimax.io/docs/api-reference/api-overview
+- Artificial Analysis German leaderboard (family-level German signal for GPT-5):
+  - https://artificialanalysis.ai/models/multilingual/german
